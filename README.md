@@ -1,2 +1,4 @@
 # html-css
- curso de  html
+ curso de  HTML e CSS do CursoemVideo
+
+ esctou aprendendo a criar sites e agoravou gerenciar meus repositorios
