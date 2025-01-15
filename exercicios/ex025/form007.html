@@ -9,17 +9,35 @@
     <h1>Exemplo de formulario</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
         <p>
-            <label for="iest">Estado</label>
-            <select name="Estado" id="iest">
-                <option value="sp">são paulo</option>
-                <option value="rj"> rio de janeiro</option>
-                <option value="mg"> minas gerais</option>
-
-                <option value="ma"> maranhão</option>
-                <option value="pe"> pernanbuco</option>
-                <option value="rn"> rio grande do norte</option>
-            </select>
+            
+                <label for="iest">Estado</label>
+                <select name="Estado" id="iest">
+                    <option value="">---Escolha---</option>
+                    <optgroup label="Região Sudeste">
+            
+                        <option value="sp">são paulo</option>
+                        <option value="rj"> rio de janeiro</option>
+                        <option value="mg"> minas gerais</option>
+                    </optgroup>
+            
+                    <optgroup label="Região Nordeste">
+                        <option value="ma"> maranhão</option>
+                        <option value="pe"> pernanbuco</option>
+                        <option value="rn"> rio grande do norte</option>
+                    </optgroup>
+                </select>
         </p>
+        <p>
+                <label for="iptof">Profissão:</label>
+                <input type="text" name="prof" id="iprof">
+                <datalist>
+                    <option value="ADM"> Administrador</option>
+                    <option value="CONT">Contabilidsta</option>
+                    <option value="DEV">Desenvolverdor</option>
+                    <option value="PROF">Professor</option>
+                </datalist>
+        </p>
+        
 
 
 
