@@ -10,7 +10,33 @@ GRANDES TELAS: acima de 1200px
 */
 
 @media print { /*impressão*/
+
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        background-image: url(../imagens/back-print.jpg);/*desnecessario*/
+         
+    }
+    main{
+        width: 90vw;
+        border: 2px solid black;
+    }
+    main::after{
+        content: 'Essa impressão foi feita atraves do site do www.curso em video.com, pela aluna, Ana Carolina Campos Mendes da Silva';
+        text-decoration: overline;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
     
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{ display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
 }
 
 @media screen and (min-width: 767px) and (max-width: 979px) { /*TABLET*/
@@ -40,6 +66,9 @@ GRANDES TELAS: acima de 1200px
 @media screen and (min-width: 1200px){ /*TELAS GRANDES*/
     body{
         background-image: url(../imagens/back-tv.jpg);
+    }
+    main{
+        width: 700px;
     }
     img#phone{display: none;}
     img#tablet{display: none;}
